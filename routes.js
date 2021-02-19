@@ -1,12 +1,9 @@
 const fs = require('fs');
-const http = require('http');
 
-
-
-const server = http.createServer((req, res)=>{
+const requestHandler = (req, res) =>{
     const url = req.url;
     const method = req.method;
-    if(url === '/'){
+if(url === '/'){
 
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
@@ -42,19 +39,10 @@ res.setHeader('Content-Type', 'text/html');
     res.write('<body><h1> Heey</body>');
     res.write('</html>');
     res.end();
-})
 
-server.listen(5000)
+}
 
-
-
-const http = require('http');
-
-const express = require('express');
-
-const routes = require('./routes');
-
-console.log(routes.someText)
-const server = http.createServer(routes.handler);
-
-server.listen(5000);
+module.exports = {
+    handler: requestHandler,
+    someText: "Random text"
+}

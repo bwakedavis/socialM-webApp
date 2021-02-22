@@ -1,28 +1,23 @@
 {
-  "name": "book-shop",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "shop ecommerce project",
+  "description": "Complete Node.js Guide",
   "main": "app.js",
   "scripts": {
-    "test": "test",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bwakedavis/book-shop.git"
-  },
-  "keywords": [
-    "node",
-    "js"
-  ],
-  "author": "Davis Bwake",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bwakedavis/book-shop/issues"
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   },
-  "homepage": "https://github.com/bwakedavis/book-shop#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "pug": "^2.0.3"
   }
 }

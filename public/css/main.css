@@ -51,6 +51,10 @@ main {
   color: #ffeb3b;
 }
 
+.centered{
+  text-align: center;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
